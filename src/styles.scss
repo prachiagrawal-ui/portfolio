@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@use './styles/variables';
+@use './styles/mixins';
+@use './styles/animations';
+@use './styles/animations' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme */
+body {
+  background-color: #0B0F19;
+  color: #E5E7EB;
+}
+@layer base {
+  input,
+  textarea {
+    background-color: #1e293b; /* slate-800 */
+    color: white;
+    border: 1px solid #374151; /* gray-700 */
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #9ca3af; /* gray-400 */
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: #22d3ee; /* accent */
+    outline: none;
+  }
+}

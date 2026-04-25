@@ -1,0 +1,42 @@
+<section class="max-w-2xl">
+
+    <h2 class="text-3xl font-bold mb-10">
+        Contact Me
+    </h2>
+
+    <form #contactForm="ngForm" (ngSubmit)="sendMessage(contactForm)" class="space-y-6">
+
+        <!-- Name -->
+        <div>
+            <label class="block mb-2 text-gray-400">Name</label>
+            <input type="text" name="name" ngModel placeholder="Your name"
+                class="form-control w-full p-3 rounded-lg bg-card border border-gray-700 focus:border-accent outline-none transition" />
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label class="block mb-2 text-gray-400">Email</label>
+            <input type="email" name="email" ngModel required placeholder="your@email.com"
+                class="form-control w-full p-3 rounded-lg bg-card border border-gray-700 focus:border-accent outline-none transition" />
+        </div>
+
+        <!-- Message -->
+        <div>
+            <label class="block mb-2 text-gray-400">Message</label>
+            <textarea  name="message" ngModel required rows="4" placeholder="Your message..."
+                class="form-control w-full p-3 rounded-lg bg-card border border-gray-700 focus:border-accent outline-none transition"></textarea>
+        </div>
+
+        <!-- Button -->
+        <button type="submit" [disabled]="!contactForm.valid" class="bg-primary px-6 py-3 rounded-xl hover:scale-105 transition">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+@if (isSent) {
+  <p class="text-green-400 mt-4">
+    Message sent successfully!
+  </p>
+}

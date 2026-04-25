@@ -1,0 +1,94 @@
+<section>
+  <div class="max-w-7xl mx-auto">
+
+    <h2 class="text-3xl font-bold mb-10">
+      Projects
+    </h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      @for (project of projects; track project.title) {
+
+      <div class="bg-card p-6 rounded-xl border border-gray-800 card-hover hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-in-out">
+
+        <!-- Title -->
+        <h3 class="text-xl font-semibold text-primary">
+          {{ project.title }}
+        </h3>
+
+        <!-- Description -->
+        <p class="mt-4 text-gray-400 line-clamp-3">
+          {{ project.description }}
+        </p>
+
+        <!-- Impact -->
+        <p class="mt-2 text-xs text-accent font-medium">
+          {{ project.impact }}
+        </p>
+
+        <!-- Highlights -->
+        <div class="mt-4 space-y-2">
+
+          @if (!isExpanded(project.title)) {
+            @for (point of project.highlights.slice(0, 3); track point) {
+              <p class="text-sm text-gray-300 leading-relaxed">
+                • {{ point }}
+              </p>
+            }
+          } @else {
+            @for (point of project.highlights; track point) {
+              <p class="text-sm text-gray-300 leading-relaxed">
+                • {{ point }}
+              </p>
+            }
+          }
+
+          <!-- Read More / Show Less -->
+          @if (project.highlights.length > 3) {
+            <button 
+              type="button"
+              (click)="toggleExpand(project.title)"
+              class="text-accent text-sm mt-2 hover:underline inline-block">
+              
+              @if (!isExpanded(project.title)) {
+                Read more ↓
+              } @else {
+                Show less ↑
+              }
+
+            </button>
+          }
+
+        </div>
+
+        <!-- Tech stack -->
+        <div class="mt-4 flex flex-wrap gap-2">
+          @for (tech of project.tech; track tech) {
+            <span class="text-xs border border-gray-600 px-2 py-1 rounded">
+              {{ tech }}
+            </span>
+          }
+        </div>
+
+        <!-- Link -->
+        @if (project.link !== '#') {
+          <a 
+            [href]="project.link" 
+            target="_blank"
+            class="inline-block mt-6 text-accent hover:underline font-medium">
+            View Project →
+          </a>
+        } @else {
+          <span class="inline-block mt-6 text-xs text-gray-500 italic">
+            Internal Project
+          </span>
+        }
+
+      </div>
+
+      }
+
+    </div>
+
+  </div>
+</section>

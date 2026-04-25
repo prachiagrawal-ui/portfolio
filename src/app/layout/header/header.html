@@ -1,0 +1,77 @@
+<header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/30 border-b border-gray-800">
+
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <!-- <h1 class="text-xl font-semibold text-primary">
+            Prachi.dev
+        </h1> -->
+        <a routerLink="/" class="text-lg md:text-xl font-bold tracking-wide">
+            Prachi Agrawal
+        </a>
+        <!-- Right Section -->
+        <div class="flex items-center gap-6">
+
+            <!-- Nav Links -->
+            <nav class="space-x-6 hidden md:flex">
+
+                <a routerLink="/" routerLinkActive="text-accent" [routerLinkActiveOptions]="{ exact: true }"
+                    class="transition hover:text-accent">
+                    Home
+                </a>
+
+                <a routerLink="/projects" routerLinkActive="text-accent" class="transition hover:text-accent">
+                    Projects
+                </a>
+
+                <a routerLink="/demos" routerLinkActive="text-accent" class="transition hover:text-accent">
+                    Demos
+                </a>
+
+                <a routerLink="/architecture" routerLinkActive="text-accent" class="transition hover:text-accent">
+                    Architecture
+                </a>
+
+                <a routerLink="/contact" routerLinkActive="text-accent" class="transition hover:text-accent">
+                    Contact
+                </a>
+
+            </nav>
+
+            <!-- Social Links -->
+            <div class="hidden md:flex gap-4 text-sm text-gray-400 ml-4">
+                <a href="https://linkedin.com/in/prachi-agrawal-b74b24101" target="_blank" class="hover:text-accent">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/prachiagrawal-ui" target="_blank" class="hover:text-accent">
+                    GitHub
+                </a>
+            </div>
+
+        </div>
+
+        <!-- <nav class="space-x-8 hidden md:flex">
+
+            <a routerLink="/" routerLinkActive="text-accent" [routerLinkActiveOptions]="{ exact: true }"
+                class="transition hover:text-accent">
+                Home
+            </a>
+            <a routerLink="/projects" routerLinkActive="text-accent" class="transition hover:text-accent">
+                Projects
+            </a>
+
+            <a routerLink="/demos" routerLinkActive="text-accent" class="transition hover:text-accent">
+                Demos
+            </a>
+
+            <a routerLink="/architecture" routerLinkActive="text-accent" class="transition hover:text-accent">
+                Architecture
+            </a>
+
+            <a routerLink="/contact" routerLinkActive="text-accent" class="transition hover:text-accent">
+                Contact
+            </a>
+
+        </nav> -->
+
+    </div>
+
+</header>

@@ -1,0 +1,147 @@
+<!-- <section>
+
+  <h2 class="text-3xl font-bold mb-10">
+    Architecture
+  </h2>
+
+  <div class="mb-10">
+    <h3 class="text-xl font-semibold text-primary mb-4">
+      Application Structure
+    </h3>
+
+    <pre class="bg-card p-4 rounded-lg text-sm text-gray-400">
+src/app/
+ ├── core/
+ ├── shared/
+ ├── layout/
+ ├── features/
+ │    ├── home/
+ │    ├── projects/
+ │    ├── demos/
+ │    ├── architecture/
+ │    └── contact/
+    </pre>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <div class="bg-card p-6 rounded-xl border border-gray-800 card-hover">
+      <h4 class="text-lg font-semibold text-primary">
+        Standalone Components
+      </h4>
+      <p class="mt-3 text-gray-400">
+        Used standalone APIs for better modularity and reduced boilerplate.
+      </p>
+    </div>
+
+    <div class="bg-card p-6 rounded-xl border border-gray-800 card-hover">
+      <h4 class="text-lg font-semibold text-primary">
+        Lazy Loading
+      </h4>
+      <p class="mt-3 text-gray-400">
+        Feature-based lazy loading to improve performance and scalability.
+      </p>
+    </div>
+
+    <div class="bg-card p-6 rounded-xl border border-gray-800 card-hover">
+      <h4 class="text-lg font-semibold text-primary">
+        Tailwind + SCSS
+      </h4>
+      <p class="mt-3 text-gray-400">
+        Utility-first styling with reusable SCSS for maintainability.
+      </p>
+    </div>
+
+    <div class="bg-card p-6 rounded-xl border border-gray-800 card-hover">
+      <h4 class="text-lg font-semibold text-primary">
+        SSR Enabled
+      </h4>
+      <p class="mt-3 text-gray-400">
+        Server-side rendering for SEO and faster initial load.
+      </p>
+    </div>
+
+  </div>
+
+</section> -->
+
+<section>
+
+  <h2 class="text-3xl font-bold mb-10">
+    Architecture
+  </h2>
+
+  <!-- Application Structure -->
+  <div class="mb-12">
+    <h3 class="text-xl font-semibold text-primary mb-4">
+      Application Structure
+    </h3>
+
+    <div class="bg-card p-6 rounded-xl border border-gray-800 text-sm text-gray-400">
+      <p>Feature-based modular architecture with clear separation of concerns:</p>
+
+      <ul class="mt-4 space-y-2">
+        <li>• Core: Singleton services, interceptors, global config</li>
+        <li>• Shared: Reusable components, directives, pipes</li>
+        <li>• Layout: Header, footer, shell structure</li>
+        <li>• Features: Lazy-loaded modules (home, projects, demos, contact)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Architectural Decisions -->
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <div class="bg-card p-6 rounded-xl border border-gray-800 card-hover">
+      <h4 class="text-lg font-semibold text-primary">
+        Standalone Components
+      </h4>
+      <p class="mt-3 text-gray-400">
+        Reduced NgModule complexity and improved maintainability using Angular standalone APIs.
+      </p>
+    </div>
+
+    <div class="bg-card p-6 rounded-xl border border-gray-800 card-hover">
+      <h4 class="text-lg font-semibold text-primary">
+        Lazy Loading Strategy
+      </h4>
+      <p class="mt-3 text-gray-400">
+        Implemented route-level lazy loading to optimize bundle size and improve initial load performance.
+      </p>
+    </div>
+
+    <div class="bg-card p-6 rounded-xl border border-gray-800 card-hover">
+      <h4 class="text-lg font-semibold text-primary">
+        Reactive Data Handling
+      </h4>
+      <p class="mt-3 text-gray-400">
+        Leveraged RxJS for handling asynchronous data streams and managing application state.
+      </p>
+    </div>
+
+    <div class="bg-card p-6 rounded-xl border border-gray-800 card-hover">
+      <h4 class="text-lg font-semibold text-primary">
+        SSR Optimization
+      </h4>
+      <p class="mt-3 text-gray-400">
+        Enabled Angular SSR to improve SEO, faster initial rendering, and better user experience.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Key Engineering Principles -->
+  <div class="mt-12">
+    <h3 class="text-xl font-semibold text-primary mb-4">
+      Key Engineering Principles
+    </h3>
+
+    <div class="bg-card p-6 rounded-xl border border-gray-800 text-gray-400 space-y-2">
+      <p>• Scalable and modular architecture</p>
+      <p>• Separation of concerns</p>
+      <p>• Performance-first design (lazy loading, SSR)</p>
+      <p>• Reusability and maintainability</p>
+    </div>
+  </div>
+
+</section>

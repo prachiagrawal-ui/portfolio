@@ -1,0 +1,9 @@
+<div class="min-h-screen flex flex-col bg-dark text-white">
+    <app-header></app-header>
+        <main class="flex-1 px-6 md:px-20 pt-24">
+        <div #container class="route-container">
+            <router-outlet (activate)="onRouteChange(container)"></router-outlet>
+        </div>
+    </main>
+    <app-footer></app-footer>
+</div>
