@@ -1,59 +1,95 @@
-# PrachiPortfolio
+# 🌐 Prachi Agrawal – Angular Developer Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.8.
+🔗 **Live Portfolio:**
+https://portfolio-nine-coral-98.vercel.app/
 
-## Development server
+---
 
-To start a local development server, run:
+## 👩‍💻 About Me
+
+Senior Angular Developer with 7+ years of experience building scalable, high-performance web applications. Specialized in modern Angular architecture, SSR, and enterprise-level integrations.
+
+---
+
+## 🚀 Features
+
+* ⚡ Modern Angular (Standalone Components)
+* 🌍 Server-Side Rendering (SSR)
+* 📦 Lazy Loaded Feature Modules
+* 🎨 Clean UI with Tailwind CSS
+* 🔁 Reactive Programming using RxJS
+* 📱 Fully Responsive Design
+
+---
+
+## 🏗️ Architecture
+
+* Feature-based folder structure
+* Reusable shared components
+* Core services and utilities
+* Scalable and maintainable code design
+
+---
+
+## 💼 Projects
+
+### 🔹 Field Service Management Platform
+
+* Built scalable web + mobile + customer portal
+* Integrated payments (Stripe, PayPal)
+* Real-time tracking and notifications
+* Third-party integrations (QuickBooks, Zapier)
+
+### 🔹 Subscription-based Wellness Platform
+
+* Hybrid mobile + web application
+* Subscription & in-app purchase integration
+* Admin dashboard for management
+
+### 🔹 Angular SSR Optimization
+
+* Improved performance using SSR & lazy loading
+* Optimized change detection strategy
+
+---
+
+## 🛠️ Tech Stack
+
+* Angular
+* TypeScript
+* RxJS
+* Tailwind CSS
+* Node.js
+* Firebase
+* Stripe / Payment Integrations
+
+---
+
+## 📬 Contact
+
+* 🔗 LinkedIn: https://linkedin.com/in/prachi-agrawal-b74b24101
+* 💻 GitHub: https://github.com/prachiagrawal-ui
+
+---
+
+## ⚙️ Run Locally
 
 ```bash
+git clone https://github.com/prachiagrawal-ui/portfolio.git
+cd portfolio
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## ⭐ Highlights
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* 7+ years of Angular experience
+* Enterprise-level application development
+* Strong focus on performance & scalability
+* Clean and maintainable architecture
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+⭐ If you like this project, feel free to give it a star!
